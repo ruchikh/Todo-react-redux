@@ -29,7 +29,7 @@ export default function rootReducer(state = data, action) {
 				dataLists: [...state.dataLists, action.data]
 			}
 		case 'REMOVE_TODO':
-			const filteredList = state.dataLists.filter(item => item.Id !== action.id);
+			const filteredList = state.dataLists.filter(item => item.id !== action.id);
 			return {
 				...state,
 				dataLists: filteredList,
